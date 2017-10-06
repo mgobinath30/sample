@@ -4,6 +4,7 @@ app.config(function($routeProvider, $locationProvider){
   $routeProvider
   .when('/potterpics',{
     templateUrl: "../pages/potter.html"
+    //animation: 'first animated zoomIn'
   })
   .when('/events',{
     templateUrl: "../pages/events.html"
@@ -35,21 +36,27 @@ app.config(function($routeProvider, $locationProvider){
   })
   .when('/bilberry',{
     templateUrl: "../pages/bilberry.html"
+    //animation: 'first'
   })
   .when('/vaporposter',{
     templateUrl: "../pages/vaporposter.html"
+    //animation: 'first'
   })
-  .when('/arweather',{
-    templateUrl: "../pages/arweather.html"
+  .when('/lewittmotion',{
+    templateUrl: "../pages/lewittmotion.html"
+    //animation: 'first'
   })
   .when('/weeklymotion',{
     templateUrl: "../pages/weeklymotion.html"
+    //animation: 'first'
   })
   .when('/stitch',{
     templateUrl: "../pages/stitch.html"
+    //animation: 'first'
   })
   .when('/',{
    templateUrl: "../pages/grid.html"
+    //animation: 'second'
   })
   .otherwise({redirectTo: '/'});
 
@@ -57,6 +64,7 @@ app.config(function($routeProvider, $locationProvider){
   return {
     enter: function(element, done) {
       element.css('display', 'none');
+      //$('body').removeClass('gridcolorchange');
       element.fadeIn(500, done);
       return function() {
         element.stop();
@@ -64,6 +72,7 @@ app.config(function($routeProvider, $locationProvider){
     },
     leave: function(element, done) {
       element.fadeOut(500, done);
+      //$('body').addClass('gridcolorchange');
       return function() {
         element.stop();
       }
