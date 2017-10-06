@@ -42,8 +42,8 @@ app.config(function($routeProvider, $locationProvider){
     templateUrl: "../pages/vaporposter.html"
     //animation: 'first'
   })
-  .when('/lewittmotion',{
-    templateUrl: "../pages/lewittmotion.html"
+  .when('/interaction',{
+    templateUrl: "../pages/arweather.html"
     //animation: 'first'
   })
   .when('/weeklymotion',{
