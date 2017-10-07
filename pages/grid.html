@@ -66,3 +66,24 @@
     <div class="col-xs-12 col-sm-6 col-md-4 grid-item nature"><img class="thumbnail img-responsive" src="https://res.cloudinary.com/debtiw4tn/image/upload/v1464247786/DSCF2489_iz6wkx.jpg" alt=""></div>
   </div>
 </div>
+
+
+<script>
+var $grid = $('.grid').isotope({
+  itemSelector: '.grid-item',
+  layoutMode: 'masonry'
+});
+// filter items on button click
+$('.filter-button-group').on( 'click', 'button', function() {
+  var filterValue = $(this).attr('data-filter');
+  $grid.isotope({ filter: filterValue });
+});
+// change is-checked class on buttons
+$('.btn-group').each( function( i, buttonGroup ) {
+  var $buttonGroup = $( buttonGroup );
+  $buttonGroup.on( 'click', 'button', function() {
+    $buttonGroup.find('.is-checked').removeClass('is-checked');
+    $( this ).addClass('is-checked');
+  });
+});
+</script>
