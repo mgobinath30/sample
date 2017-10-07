@@ -36,10 +36,9 @@
 
 
 <script>
-  
   $(function () {
 
-    var $container = $('#grid');
+   /* var $container = $('#grid');
 
     $container.isotope({
       itemSelector: '.prettyphoto',
@@ -51,6 +50,10 @@
       effect: 'fadeIn',
       appear: function () {
         console.log('loaded image');
+        var $grid = $('.grid').isotope({
+          itemSelector: '.prettyphoto',
+          layoutMode: 'masonry'
+        });
       }
     });
   });
@@ -60,7 +63,7 @@
       itemSelector: '.prettyphoto',
       layoutMode: 'masonry'
     });
-  },500);
+  }, 500);*/
 
   var $grid = $('.grid').isotope({
     itemSelector: '.grid-item',
