@@ -197,8 +197,17 @@
 </div>
 <!-- Links and Info Section End-->
 <script src="https://npmcdn.com/isotope-layout@3.0/dist/isotope.pkgd.min.js"></script>
-<script src="https://raw.githubusercontent.com/tuupola/jquery_lazyload/master/jquery.lazyload.js"></script>
+<script src="https://raw.githubusercontent.com/tuupola/jquery_lazyload/master/jquery.lazyload.js" type="text/javascript"></script>
 <script>
+  $(function(){
+    $(".grid-item").lazyload({
+    event: 'scroll',
+    effect: "fadeIn",
+    appear: function () {
+      console.log('loaded image')
+    }
+  });
+  });
   // init Isotope
   setTimeout(function () {
     var $grid = $('.grid').isotope({
@@ -226,13 +235,7 @@
     layoutMode: 'masonry'
   });
 
-  $(".grid-item").lazyload({
-    event: 'scroll',
-    effect: "fadeIn",
-    appear: function () {
-      console.log('loaded image')
-    }
-  });
+
 
   // change is-checked class on buttons
   $('.btn-group').each(function (i, buttonGroup) {
