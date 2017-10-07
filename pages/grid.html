@@ -247,7 +247,16 @@
     }).animate({
       opacity: 1
     }, 'slow');
+
+    $('video').css({
+      opacity: 0,
+      visibility: "visible"
+    }).animate({
+      opacity: 1
+    }, 'slow');
   }, 2500);
+
+  
   // filter items on button click
   $('.filter-button-group').on('click', 'button', function () {
     var filterValue = $(this).attr('data-filter');
