@@ -197,25 +197,10 @@
 <script src="https://npmcdn.com/isotope-layout@3.0/dist/isotope.pkgd.min.js"></script>
 <script>
 
-
- $(function(){
-
-    var $container = $('#grid');
-
-    $container.isotope({
-        itemSelector : '.prettyphoto',
-        containerClass: 'isotope'
-    });
-
-    $("img").lazyload({
-        event : 'scroll',
-        effect : 'fadeIn',
-        appear: function(){
-            console.log('loaded image');
-        }
-    });
-
-});
+	window.lazySizesConfig = window.lazySizesConfig || {};
+	//only for demo in production I would use normal expand option
+	window.lazySizesConfig.expand = 9;
+ 
   // init Isotope
   setTimeout(function () {
     var $grid = $('.grid').isotope({
