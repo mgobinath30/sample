@@ -53,6 +53,14 @@
       }
     });
   });
+
+  setTimeout(function () {
+    var $grid = $('.grid').isotope({
+      itemSelector: '.prettyphoto',
+      layoutMode: 'masonry'
+    });
+  },500);
+
   var $grid = $('.grid').isotope({
     itemSelector: '.grid-item',
     layoutMode: 'masonry'
