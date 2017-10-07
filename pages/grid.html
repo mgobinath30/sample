@@ -1,3 +1,13 @@
+<script>
+  $(window).load(function() {
+      if($(window).width() > 650){
+     var vc=$('.grid-hvideo');
+     for(var i in vc){
+       vc[i].setAttribute('preload','auto')
+        }
+      }
+    });
+</script>
 <div class="container">
   <!-- Filter Part Start -->
   <div class="home-text">
@@ -232,14 +242,6 @@
         $buttonGroup.find('.is-checked').removeClass('is-checked');
         $(this).addClass('is-checked');
       });
-    });
-    $(window).load(function() {
-      if($(window).width() > 650){
-     var vc=$('.grid-hvideo');
-     for(var i in vc){
-       vc[i].setAttribute('preload','auto')
-        }
-      }
     });
     </script>
 <style>
