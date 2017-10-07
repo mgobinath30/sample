@@ -325,10 +325,7 @@ section .fadeIn {
 
 /* Media Query Responsive Handle Section */
 
-/*.grid-himage {
-    display: none !important;
-}*/
-.grid-hvideo {
+.grid-himage {
     display: none !important;
 }
 @media screen and (max-width: 650px) {
@@ -344,12 +341,12 @@ section .fadeIn {
     video {
         max-height: 500px;
     }
-    /*.grid-hvideo {
+    .grid-hvideo {
         display: none !important;
     }
     .grid-himage {
         display: block !important;
-    }*/
+    }
     button.btn.btn-default {
         font-size: 1em;
     }
