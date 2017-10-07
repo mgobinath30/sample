@@ -220,6 +220,19 @@
       }
     });
 
+    $("video").lazyload({
+      event: 'scroll',
+      effect: 'fadeIn',
+      appear: function () {
+        console.log('loaded image');
+
+        var $gridd = $('.grid').isotope({
+          itemSelector: '.grid-item',
+          layoutMode: 'masonry'
+        });
+      }
+    });
+
   });
   // init Isotope
   setTimeout(function () {
