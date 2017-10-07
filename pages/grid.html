@@ -212,6 +212,11 @@
       effect: 'fadeIn',
       appear: function () {
         console.log('loaded image');
+
+        var $gridd = $('.grid').isotope({
+          itemSelector: '.grid-item',
+          layoutMode: 'masonry'
+        });
       }
     });
 
@@ -275,7 +280,8 @@
   .reveal-animation {
     width: 100%;
   }
+
   .grid-item {
-    min-height: 250px !important;
-}
+    /*min-height: 400px !important;*/
+  }
 </style>
