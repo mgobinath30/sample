@@ -211,7 +211,18 @@
       event: 'scroll',
       effect: 'fadeIn',
       appear: function () {
-        console.log('loaded image');
+        //console.log('loaded image');
+        var $grid = $('.grid').isotope({
+          itemSelector: '.prettyphoto',
+          layoutMode: 'masonry'
+        });
+        //Animate
+        $('img').css({
+          opacity: 0,
+          visibility: "visible"
+        }).animate({
+          opacity: 1
+        }, 'slow');
       }
     });
 
