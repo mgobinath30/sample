@@ -184,20 +184,14 @@
 </div>
 <!-- Links and Info Section End-->
 <script src="https://npmcdn.com/isotope-layout@3.0/dist/isotope.pkgd.min.js"></script>
-<script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.js"></script>
 
 <script>
-    $(function () {
-        var $container = $('.grid');
-
-        $container.imagesLoaded(function () {
-            $container.isotope({
-                // options...
-                itemSelector: '.grid-item',
-                layoutMode: 'masonry'
-            });
-        });
+    $(window).load(function(){
+    var $grid = $('.grid').isotope({
+      itemSelector: '.prettyphoto',
+      layoutMode: 'masonry'
     });
+    
     $('.filter-button-group').on('click', 'button', function () {
         var filterValue = $(this).attr('data-filter');
         $gridd.isotope({
@@ -212,7 +206,7 @@
             $(this).addClass('is-checked');
         });
     });
-
+});
     // Play and Pause Video
     function playPause(video) {
         if (video.paused) {
