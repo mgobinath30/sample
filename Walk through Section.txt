@@ -1,30 +1,67 @@
 <!--Walkthrough Section Start-->
 <div class="row section animated fadeIn">
-      <h2 class="section-title nomargin">Walkthrough</h2>
-      <div class="col-md-3">
-         <p class="videotitle">Home</p>
-         <video muted="" loop="" id="video3" autoplay="" width="100%">
-            <source src="../images/PotterPics/3Profile.mp4" type="video/mp4">
-            <source src="mov_bbb.ogg" type="video/ogg">
-            Your browser does not support HTML5 video.
-         </video>
+         <h2 class="section-title nomargin">Walkthrough</h2>
+         <div class="col-md-3 col-md-offset-1">
+            <p class="videotitle">Home</p>
+            <video muted="" loop="" id="video3" autoplay="" width="100%">
+               <source src="../images/PotterPics/Home.mp4" type="video/mp4">
+               <source src="mov_bbb.ogg" type="video/ogg">
+               Your browser does not support HTML5 video.
+            </video>
+         </div>
+         <div class="col-md-3 col-md-offset-1">
+            <p class="videotitle">Feed</p>
+            <video muted="" loop="" id="video3" autoplay="" width="100%">
+               <source src="../images/PotterPics/Feed.mp4" type="video/mp4">
+               <source src="mov_bbb.ogg" type="video/ogg">
+               Your browser does not support HTML5 video.
+            </video>
+         </div>
+         <div class="col-md-3 col-md-offset-1">
+            <p class="videotitle">Search</p>
+            <video muted="" loop="" id="video3" autoplay="" width="100%">
+               <source src="../images/PotterPics/Search.mp4" type="video/mp4">
+               <source src="mov_bbb.ogg" type="video/ogg">
+               Your browser does not support HTML5 video.
+            </video>
+         </div>
+<div class="clearfix"></div>
+         <div class="col-md-3 col-md-offset-1">
+            <p class="videotitle">Profile</p>
+            <video muted="" loop="" id="video3" autoplay="" width="100%">
+               <source src="../images/PotterPics/Profile.mp4" type="video/mp4">
+               <source src="mov_bbb.ogg" type="video/ogg">
+               Your browser does not support HTML5 video.
+            </video>
+         </div>
+
+         <div class="col-md-3 col-md-offset-1">
+            <p class="videotitle">Take Picture</p>
+            <video muted="" loop="" id="video3" autoplay="" width="100%">
+               <source src="../images/PotterPics/Camera.mp4" type="video/mp4">
+               <source src="mov_bbb.ogg" type="video/ogg">
+               Your browser does not support HTML5 video.
+            </video>
+         </div>
+         <div class="col-md-3 col-md-offset-1">
+            <p class="videotitle">Post</p>
+            <video muted="" loop="" id="video3" autoplay="" width="100%">
+               <source src="../images/PotterPics/Post.mp4" type="video/mp4">
+               <source src="mov_bbb.ogg" type="video/ogg">
+               Your browser does not support HTML5 video.
+            </video>
+         </div>
       </div>
-      
-      <div class="col-md-3 col-md-offset-1">
-         <p class="videotitle">Profile</p>
-         <video muted="" loop="" id="video3" autoplay="" width="100%">
-            <source src="../images/PotterPics/3Profile.mp4" type="video/mp4">
-            <source src="mov_bbb.ogg" type="video/ogg">
-            Your browser does not support HTML5 video.
-         </video>
-      </div>
-      <div class="col-md-3 col-md-offset-1">
-         <p class="videotitle">Post</p>
-         <video muted="" loop="" id="video3" autoplay="" width="100%">
-            <source src="../images/PotterPics/4Post.mp4" type="video/mp4">
-            <source src="mov_bbb.ogg" type="video/ogg">
-            Your browser does not support HTML5 video.
-         </video>
-      </div> 
-   </div>
    <!--Walkthrough Section End-->
+   
+   
+   2nd Fix:
+   
+   <!-- CSS Change -->
+   
+   .view {
+    position: relative;
+    top: 25px;
+    transition: 300ms;
+    width: 100%;
+}
